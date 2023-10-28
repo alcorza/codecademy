@@ -1,2 +1,2 @@
-# codecademy.projects
+# codecademy
 Lesson projects.
