@@ -1,10 +1,230 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Cheatsheet</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css"/> <!-- General Styles -->
+    <link rel="stylesheet" type="text/css" href="./styles/tables.css"/> <!-- Table Styles -->
+</head>
 <body>
-  <h1>Derek</h1>
-  <p>Welcome to my github pages site!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <header>
+        <h1>HTML & CSS Cheatsheet</h1>
+        <h2>Codecademy Project</h2>
+    </header>
+    <main>
+
+<!-- Basic HTML Concepts -->
+
+        <section id="html-basics">
+            <h3>HTML Basics</h3>
+            <table class="section-table">
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>HTML Ref</th>
+                            <th>CSS Ref</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>HTML Tag</td>
+                        <td>An HTML Tag is a command (of sorts) for a web browser to interpret how the skeleton of a webpage is built. There are multiple tag types which instruct the browser how specifically to render an element on screen.</td>
+                        <td><span class="spanbasicscodehtml">&lt;mytag&gt;&lt;/mytag&gt;</span></td>
+                        <td><span class="spanbasicscodecss">mytag { }</span></td>
+                    </tr>
+                    <tr>
+                        <td>Class</td>
+                        <td>HTML classes can be used to classify a specific tag to single it out from other tags of the same type. All of it's child elements will inheret any properties set for that tags class. The same class can be repeated so they can benefit from the same properties applied to that class (for example in a CSS stylesheet).</td>
+                        <td><span class="spanbasicscodehtml">&lt;mytag class=&quot;myclass&quot;&gt;&lt;/mytag&gt;</span></td>
+                        <td><span class="spanbasicscodecss">.myclass { }</span></td>
+                    </tr>
+                    <tr>
+                        <td>ID</td>
+                        <td>HTML ids can be used to classify a tag with a specific id to single it out from other tags. ID's differ from classes in that they are unique and can only be used once (unlike classes). An ID can also have styles applied in CSS.</td>
+                        <td><span class="spanbasicscodehtml">&lt;mytag id=&quot;myid&quot;&gt;&lt;/mytag&gt;</span></td>
+                        <td><span class="spanbasicscodecss">#myid { }</span></td>
+                    </tr>
+                    <tr>
+                        <td>Self-closing Tags</td>
+                        <td>Self-closing tags do not require a <span class="spancodesamplegreen">&lt;/tagtobeclosed&gt;</span> after <span class="spancodesamplegreen">&lt;mytagisopened&gt;</span> - It will just look like this <span class="spancodesamplegreen">&lt;mytag varible=&quot;value&quot;/&gt;</span> - a <span class="spancodesamplegreen">&lt;link&gt;</span> or <span class="spancodesamplegreen">&lt;meta&gt;</span> tag are good examples of a self-closing tag.</td>
+                        <td><span class="spanbasicscodehtml">&lt;mytag id=&quot;myid&quot;&gt;</span></td>
+                        <td><span class="spanbasicscodecss">#myid { }</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+<!-- HTML Tags -->
+
+        <section id="html-tags">
+            <h3>HTML Tags</h3>
+            <table class="section-table">
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                            <th>Self-closing (Y/N)</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="td-align-center"><span class="spancodesample">&lt;!DOCTYPE html&gt;</span></td>
+                        <td>Doc Type</td>
+                        <td>This is a HTML 5 document specification declaration. It helps web browsers understand and interpret it as an HTML document. It appears only once at the very start of an HTML document and before all other HTML elements.</td>
+                        <td><pre>&lt;!DOCTYPE html&gt;</pre></td>
+                        <td class="td-align-center">Y</td>
+                    </tr>
+                    <tr>
+                        <td class="td-align-center"><span class="spancodesample">&lt;head&gt;</span></td>
+                        <td>Head Tag</td>
+                        <td>HTML head tag, meta tags, title tags and link tags are examples of elements that appear in the head element.</td>
+                        <td>
+<pre>&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;HTML &amp; CSS Cheatsheet&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./styles/styles.css&quot;/&gt;
+&lt;/head&gt;</pre>
+                        </td>
+                        <td class="td-align-center">N</td>
+                    </tr>
+                    <tr>
+                        <td class="td-align-center"><span class="spancodesample">&lt;meta&gt;</span></td>
+                        <td>Meta Tag</td>
+                        <td>Element description here</td>
+                        <td><pre>Code sample here</pre></td>
+                        <td class="td-align-center">...</td>
+                    </tr>
+                    <tr>
+                        <td class="td-align-center"><span class="spancodesample">Element sample here</span></td>
+                        <td>Element name here</td>
+                        <td>Element description here</td>
+                        <td><pre>Code sample here</pre></td>
+                        <td class="td-align-center">...</td>
+                    </tr>
+                    <tr>
+                        <td class="td-align-center"><span class="spancodesample">Element sample here</span></td>
+                        <td>Element name here</td>
+                        <td>Element description here</td>
+                        <td><pre>Code sample here</pre></td>
+                        <td class="td-align-center">...</td>
+                    </tr>
+                    <tr>
+                        <td class="td-align-center"><span class="spancodesample">Element sample here</span></td>
+                        <td>Element name here</td>
+                        <td>Element description here</td>
+                        <td><pre>Code sample here</pre></td>
+                        <td class="td-align-center">...</td>
+                    </tr>
+                    <tr>
+                        <td class="td-align-center"><span class="spancodesample">Element sample here</span></td>
+                        <td>Element name here</td>
+                        <td>Element description here</td>
+                        <td><pre>Code sample here</pre></td>
+                        <td class="td-align-center">...</td>
+                    </tr>
+                    <tr>
+                        <td class="td-align-center"><span class="spancodesample">Element sample here</span></td>
+                        <td>Element name here</td>
+                        <td>Element description here</td>
+                        <td><pre>Code sample here</pre></td>
+                        <td class="td-align-center">...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    <!-- HTML Tag Comments -->
+
+        <section id="html-tag-comments">
+            <ul>
+                <li>Self-closing (Y/N) means whether a tag ends in a <span class="spancodesample">&lt;/element&gt;</span> or not. Y (Yes) means it does not require a closing tag, N (No) means it DOES require a closing tag.</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+<!-- HTML Attributes -->
+
+        <section id="html-attributes">
+            <h3>HTML Attributes</h3>
+            <table class="section-table">
+                <thead>                
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tr>
+                    <td class="td-align-center"><span class="spancodesample">Element sample here</span></td>
+                    <td>Element name here</td>
+                    <td>Element description here</td>
+                    <td><pre>Code sample here</pre></td>
+                </tr>
+            </table>
+        </section>
+
+<!-- Table Tags -->
+
+        <section id="table-tags">
+            <h3>HTML Table Tags</h3>
+            <table class="section-table">
+                <thead>                
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                        <th>Self-closing (Y/N)</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td class="td-align-center"><span class="spancodesample">Element sample here</span></td>
+                    <td>Element name here</td>
+                    <td>Element description here</td>
+                    <td><pre>Code sample here</pre></td>
+                    <td class="td-align-center">...</td>
+                </tr>
+            </table>
+        </section>
+
+<!-- CSS Examples -->
+
+        <section id="table-css">
+            <h3>CSS Examples</h3>
+            <table class="section-table">
+                <thead>                
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                        <th>Self-closing (Y/N)</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td class="td-align-center"><span class="spancodesample">Element sample here</span></td>
+                    <td>Element name here</td>
+                    <td>Element description here</td>
+                    <td><pre>Code sample here</pre></td>
+                    <td class="td-align-center">...</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+            <p id="footer-p">Copyright &copy; 2023 <span id="span-bullet">&#x2022;</span> Built by: <span class="author">AlcorZA</span></p>
+            <p id="footer-build-date">Build Date: 3 November 2023</p>
+    </footer>
 </body>
 
 </html>
