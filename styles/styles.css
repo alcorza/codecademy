@@ -1,0 +1,115 @@
+/* Global CSS Settings */
+
+* {
+    background-color: #1f1f1f;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/montserrat/variable/Montserrat-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Montserrat Italic';
+    src: url(../fonts/montserrat/variable/Montserrat-Italic-VariableFont_wght.ttf) format(truetype);
+}
+
+/* Headings */
+
+h1 {
+    background-color: rgb(12, 121, 121);
+}
+
+h1, h3 {
+    font-family: 'Montserrat';
+    text-align: center;
+    padding: 10px;
+
+}
+
+h2 {
+    font-family: 'Montserrat Italic';
+    font-weight: 400;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: x-large;
+    background-color: rgb(92, 83, 72);
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Lists */
+
+ul {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: small;
+    line-height: 1.5;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+/* Spans */
+
+.spanbasicscodehtml, .spanbasicscodecss, .spancodesamplegreen, .spancodesample {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: larger;
+    text-wrap: nowrap;
+}
+
+.spanbasicscodehtml {
+    color: yellow;
+}
+
+.spanbasicscodecss {
+    color: orange;
+}
+
+.spancodesamplegreen {
+    color: greenyellow;
+}
+.spancodesample {
+    color: mediumturquoise;
+}
+
+/* Footer Styling */
+
+footer {
+    font-family: 'Montserrat';
+    font-size: small;
+    background-color: darkcyan;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer-p {
+    background-color: transparent;
+}
+
+#footer-build-date {
+    font-size: x-small;
+    font-weight: 800;
+    background-color: transparent;
+    color: black;
+}
+
+.author {
+    background-color: transparent;
+    font-style: italic;
+}
+
+#span-bullet {
+    background-color: transparent;
+    font-size: large;
+    font-weight: 900;
+}

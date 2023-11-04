@@ -1,0 +1,27 @@
+/* CSS for Table Styles */
+
+table.section-table {
+    font-family: 'Montserrat';
+    width: auto;
+    background-color: #1F1F1F;
+    border-collapse: collapse;
+    border: 1px solid white;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+table.section-table td, table.section-table th {
+    border: 1px solid white;
+    padding: 10px 20px;
+  }
+
+table.section-table thead th {
+    background-color: grey;
+    font-family: 'Montserrat';
+    font-weight: 800;
+  }
+
+table.section-table .td-align-center {
+    text-align: center;
+}
